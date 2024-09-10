@@ -7,6 +7,17 @@ Recuerde que "No se puede dividir entre 0".
 */
 function calculadora(operacion, num1, num2) {
     // TODO: Resolver
+    if (operacion === "suma") {
+        return num1 + num2;}
+        if (operacion === "resta") {
+            return num1 - num2;}
+            if (operacion === "multiplicacion") {
+                return num1 * num2;}
+                if (operacion === "division") {
+                    if (num2 === 0) {
+                    return "No se puede dividir entre 0";}
+                    return num1 / num2;
+                    }
 }
 
 console.log("-----------------------------------")

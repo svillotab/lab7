@@ -10,9 +10,24 @@ Además, debe clasificar el IMC:
 "Sobrepeso" si está entre 25 y 29.9,
 "Obesidad" si es 30 o más.
 */
-function calcularIMC(peso, altura) {
+function calcularIMC(peso, altura)  
+ {
+    const imc = peso / (altura*altura)
     // TODO: Resolver
-}
+    if (imc < 18.5) {
+            return "Bajo peso"
+        }
+        if (imc < 24.9 && 18.5 < imc) {
+            return "Normal"
+        }
+    if (imc < 29.9 && 25 < imc) {
+        return "Sobrepeso"
+    }
+        if (imc >= 30) {
+            return "Obesidad"
+    }
+    }
+
 
 console.log("-----------------------------------")
 console.log("EJERCICIO 8")

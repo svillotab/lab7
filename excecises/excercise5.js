@@ -8,6 +8,18 @@ Crea una función llamada clasificarEdad(edad) que reciba una edad como argument
 */
 function clasificarEdad(edad) {
     // TODO: Resolver
+if (edad >= 65) {
+    return "Adulto mayor";
+}
+if (18 <= edad && edad < 65) {
+    return "Adulto";
+}
+if (12 < edad && edad <= 17) {
+    return "Adolescente";
+}
+if (0 <= edad && edad < 12) {
+    return "Niño";
+}
 }
 
 console.log("-----------------------------------")
